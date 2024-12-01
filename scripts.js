@@ -47,6 +47,82 @@ function DrawSpiral(context) {
         turnRight(89);
     }
 }
+
+function DrawComplexArt(context) {
+  // Start drawing from the center of the canvas
+  x = context.canvas.width / 2;
+  y = context.canvas.height / 2;
+  // Start facing right (0 degrees)
+  angle = 0.0; 
+  context.moveTo(x, y);
+  context.beginPath();
+  // Make the lines thicker
+  context.lineWidth = 2; 
+  
+  // Loop to draw the pattern
+  for (let counter = 3; counter < 2000; counter += 3) {
+      // Set the color to a vibrant rainbow effect
+      context.strokeStyle = `hsl(${(counter * 2) % 360}, 100%, 60%)`;
+      
+      // Move forward by a quarter of the counter value
+      moveForward(counter / 4, context); 
+      context.stroke();
+      context.beginPath(); // Start new path for clean color transitions
+      context.moveTo(x, y);
+      
+      // Turn right by 45 degrees
+      turnRight(45);
+      // Move forward by a fifth of the counter value
+      moveForward(counter / 5, context);
+      context.stroke();
+      context.beginPath();
+      context.moveTo(x, y);
+      
+      // Turn left by 60 degrees
+      turnLeft(60);
+      // Move forward by a sixth of the counter value
+      moveForward(counter / 6, context);
+      context.stroke();
+      context.beginPath();
+      context.moveTo(x, y);
+      
+      // Turn right by 120 degrees
+      turnRight(120);
+      // Move forward by a seventh of the counter value
+      moveForward(counter / 7, context);
+      context.stroke();
+      context.beginPath();
+      context.moveTo(x, y);
+      
+      // Turn left by 90 degrees
+      turnLeft(90);
+      // Move forward by an eighth of the counter value
+      moveForward(counter / 8, context);
+      context.stroke();
+      context.beginPath();
+      context.moveTo(x, y);
+      
+      // Turn right by 150 degrees
+      turnRight(150);
+      // Move forward by a ninth of the counter value
+      moveForward(counter / 9, context);
+      context.stroke();
+      context.beginPath();
+      context.moveTo(x, y);
+      
+      // Turn left by 75 degrees
+      turnLeft(75);
+      // Move forward by a tenth of the counter value
+      moveForward(counter / 10, context);
+      context.stroke();
+      context.beginPath();
+      context.moveTo(x, y);
+      
+      // Turn right by 30 degrees
+      turnRight(30);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const timeElement = document.getElementById('clock');
   
