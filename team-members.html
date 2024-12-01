@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Team members</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script>      
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="media/logo.png" alt="Logo" class="logo">
+    
+                <div class="navbuttons">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team-members.html">Team Members</a></li>
+                        <li><a href="hour-of-code.html">Hour of Code</a></li>
+                        <li><a href="web-project.html">Website Project</a></li>
+                        <li><a href="code-artist.html">Code Art</a></li>
+                    </ul>
+                </div>
+            
+                <div id="clock" class="clock"></div>
+            </nav>
+        </header>
+
+        <div class="members">
+        <h2>Yusif Karimov</h2>
+        <article>
+            I am Yusif Karimov. I am studying BSEEE. I love the color black. My hobbies are playing dominoes,
+            playing “nərd” ,<br> and playing football games on PS with my friends. In addition to university, I am also
+            interested in cars,<br> my favorite brand is a German legend, BMW.
+        </article>
+
+        <h2>Nihat Shukurov</h2>
+        <article>
+            I am Nihat Shukurov, and I am a student at ADA University. I am studying for a bachelor's degree in
+            Information Technologies. <br> My real purpose is choosing this field to specialize in cybersecurity. Now, I
+            am trying to develop my skills in a specific field. <br> If you ask my general life, I will talk about doing
+            sport, hanging out with friends, and watching movies. My sport journey began in my childhood. <br>I went to
+            a lot of sports like volleyball, basketball, and fitness. In addition, I am spending time together with
+            my groupmates in university. <br>Overall, my life is very well.
+        </article>
+
+        <h2>Bakhshali Bakhshaliyev</h2>
+        <article>
+            My name is Bakhshali Bakhshaliyev, and I am a student at ADA University, pursuing a Bachelor’s degree in
+            Computer Science. <br>I was always interested in competitive programming. Outside of academics, I am a
+            person
+            who loves going to the gym and listening to Vagif Mustafazadeh. <br>This helps me to stay strong physically
+            and
+            mentally. One of my favorite people is Pavel Durov, because of his biography and team management abilities.
+            <br>
+            I consider myself a show fanatic. I believe that sometimes our best decisions are the ones that don't
+            make sense at all.
+        </article>
+
+        <h2>Elton Guliyev</h2>
+        <article>
+            My name is Elton Guliyev, and I am a student at ADA University, pursuing a Bachelor’s degree in Computer
+            Science. <br>I have a passion for technology and enjoy exploring how it can shape our future. Outside of
+            academics, I am an active person who <br>loves playing football and practicing boxing, which help me stay
+            fit
+            and disciplined. My favorite football club is Barcelona, and <br> I admire their style of play and rich
+            history.
+            Balancing my studies with my hobbies allows me to grow both intellectually and physically, <br>preparing me
+            for
+            future challenges.
+        </article>
+    </div>
+
+    <script>
+        // Article and h2 will be shown slowly
+        const headings = document.querySelectorAll('.members h2, .members article');
+
+
+        headings.forEach((heading, index) => {
+            heading.style.opacity = '0';
+            heading.style.transform = 'translateY(20px)';
+            heading.style.transition = `opacity 0.6s ease ${index * 0.3}s, transform 0.6s ease ${index * 0.3}s`;
+
+            window.addEventListener('load', () => {
+                heading.style.opacity = '1';
+                heading.style.transform = 'translateY(0)';
+            });
+        });
+
+
+
+    </script>
+    </body>
+</html>

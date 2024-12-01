@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+
+<head>
+    <title>Homework 3: How websites work?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="media/logo.png" alt="Logo" class="logo">
+
+            <div class="navbuttons">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team-members.html">Team Members</a></li>
+                    <li><a href="hour-of-code.html">Hour of Code</a></li>
+                    <li><a href="web-project.html">Website Project</a></li>
+                    <li><a href="code-artist.html">Code Art</a></li>
+                </ul>
+            </div>
+        
+            <div id="clock" class="clock"></div>
+        </nav>
+    </header>
+    <div class="input">
+        <input type="text" id="nameGreet" placeholder="Enter your name please">
+        <button onclick="showGreet()">Submit</button>
+    </div>
+
+  <div class="dark-bg" id="darkBG"></div>
+  <div class="custom-greet" id="customGreet">
+    <h2 id="greet">Custom Alert</h2>
+    <p>Welcome to website made by Tech Titans</p>
+    <button onclick="hideGreet()" id="OK">OK</button>
+  </div>
+    <div class="header">
+        <h1>Meet the Tech Titans</h1>
+    </div>
+    <main class="content">
+        <section class="intro">
+            <p>
+                Our IT homework team is a dynamic group of four, united in their curiosity to learn and loving to take up challenges. Such is the journey so far: a learning curve of togetherness on many an exciting project.
+            </p>
+        </section>
+        <section class="milestone">
+            <h2>First Milestone: Adapting to Technology</h2>
+            <p>
+                Our adventure began with the intriguing world of Raspberry Pi and logical gates. From assembling circuits to making LEDs blink in perfect sequence, we discovered the power of creativity and teamwork.
+            </p>
+        </section>
+        <section class="milestone">
+            <h2>Second Milestone: Inspiring Future Coders</h2>
+            <p>
+                Now, it was our turn to organize an Hour of Code for our peers. The class was turned into a vibrant coding hub that interested and allowed viewers to realize all the things possible with technology.
+            </p>
+        </section>
+        <section class="milestone">
+            <h2>Now: Building Our Digital Identity</h2>
+            <p>
+                The mission at present is to develop a team website. This is not just coding, but how we represent our team, our achievements and where we are heading. We're blending in all our unique skills into a site design that's functional and a result to this journey we have been undertaking.
+            </p>
+        </section>
+        <footer class="footer">
+            <p>
+                We are not just doing assignments; we're building a legacy together—one of innovation and collaboration.
+            </p>
+        </footer>
+    </main>
+    
+    
+    
+
+    <div class="information">
+        <h3>If you want to contact with us or watch our team work detailedly</h3>
+        <a href="https://www.instagram.com/team31_ada?igsh=MW95YzM5cjJud3k4aw==" target="_blank">
+            <img src="./media/instagram.png" alt="">
+        </a>
+    </div>
+
+
+    <script>
+        // When click button, its size will change
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+            button.style.transform = 'scale(0.9)';
+            button.style.transition = 'transform 0.1s ease';
+            setTimeout(() => {
+                button.style.transform = 'scale(1)';
+            }, 100);
+        });
+
+
+    </script>
+
+</body>
+
+</html>

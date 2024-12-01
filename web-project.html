@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Website project</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script>      
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="media/logo.png" alt="Logo" class="logo">
+    
+                <div class="navbuttons">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team-members.html">Team Members</a></li>
+                        <li><a href="hour-of-code.html">Hour of Code</a></li>
+                        <li><a href="web-project.html">Website Project</a></li>
+                        <li><a href="code-artist.html">Code Art</a></li>
+                    </ul>
+                </div>
+            
+                <div id="clock" class="clock"></div>
+            </nav>
+        </header>
+         <div class="code-academy">
+
+        <div class="up">
+
+            <div class="yusif">
+                <h2>Yusif Karimov</h2>
+                <a href="https://www.codecademy.com/profiles/ykarimov18069" target="_blank">
+                    <img src="./media/Yusif.png" alt="">
+                </a>
+            </div>
+
+            <div class="nihat">
+                <h2>Nihat Shukurov</h2>
+                <a href="https://www.codecademy.com/profiles/nshukurov20465" target="_blank">
+                    <img src="./media/Nihat.png" alt="">
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="down">
+            <div class="bakhshali">
+                <h2>Bakhshali Bakhshaliyev</h2>
+                <a href="https://www.codecademy.com/profiles/bbakhshaliyev17151" target="_blank">
+                    <img src="./media/Baxseli.png" alt="">
+                </a>
+            </div>
+
+            <div class="elton">
+                <h2>Elton Guliyev</h2>
+                <a href="https://www.codecademy.com/profiles/EltonGuliyev" target="_blank">
+                    <img src="./media/Elton.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+
+        // These codes will give shake to img and h2
+        const profileCards = document.querySelectorAll('.code-academy > div');
+
+        profileCards.forEach((card) => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'rotate(-2deg)';  
+                card.style.transition = 'transform 0.1s ease';
+            });
+
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'rotate(0deg)';   
+            });
+        });
+
+    </script>
+    </body>
+</html>
