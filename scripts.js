@@ -78,7 +78,7 @@ function DrawComplexArt(context) {
       context.beginPath();
       context.moveTo(x, y);
       
-      // Turn left by 60 degrees
+      // turn left by 60 degrees
       turnLeft(60);
       // Move forward by a sixth of the counter value
       moveForward(counter / 6, context);
